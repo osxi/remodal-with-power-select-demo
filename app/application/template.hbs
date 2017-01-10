@@ -1,0 +1,8 @@
+{{#ember-remodal openButton='Open A Modal'}}
+  <p>Anything placed inside a modal's block will be rendered inside the modal.</p>
+  <img src="http://loremflickr.com/320/240" alt="random image" />
+
+  {{#power-select options=names onchange=(action "foo") renderInPlace=true as |name|}}
+    {{name}}
+  {{/power-select}}
+{{/ember-remodal}}
